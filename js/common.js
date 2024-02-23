@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    AOS.init({
+        easing: 'ease-in-out',
+        delay: 100,
+        once: true,
+        duration: 700,
+        offset: 100,
+        // disable: 'mobile'
+    });
+
     const swiperEvents = new Swiper(".events_slider", {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -14,7 +23,7 @@ $(document).ready(function () {
                 slidesPerView: 2,
                 spaceBetween: 24,
             },
-            993: {
+            1101: {
                 slidesPerView: 3,
                 spaceBetween: 32,
             },
@@ -57,7 +66,7 @@ $(document).ready(function () {
                 slidesPerView: 3,
                 spaceBetween: 24,
             },
-            993: {
+            1101: {
                 slidesPerView: 4,
                 spaceBetween: 32,
             },
@@ -65,12 +74,14 @@ $(document).ready(function () {
     });
 
     const swiperPartners = new Swiper(".partners_slider", {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: 'auto',
+        spaceBetween: 52,
         watchSlidesProgress: true,
         mousewheelControl: true,
         watchOverflow: true,
         watchSlidesVisibility: true,
+        centeredSlides: true,
+        loop: true,
         pagination: {
             el: ".swiper-pagination",
         },
@@ -80,34 +91,27 @@ $(document).ready(function () {
         },
         breakpoints: {
             577: {
-                slidesPerView: 2,
-                spaceBetween: 24,
-            },
-            769: {
-                slidesPerView: 3,
+                loop: false,
+                centeredSlides: false,
+                slidesPerView: 4,
                 spaceBetween: 24,
             },
             993: {
+                loop: false,
+                centeredSlides: false,
                 slidesPerView: 5,
                 spaceBetween: 32,
             },
         },
     });
 
-
     $('.select').select2({
         minimumResultsForSearch: Infinity,
-        // dropdownAutoWidth: true,
         width: 'auto',
     });
 
-
     $('.mobile_menu_btn').on('click', function () {
-        $('.mobile_menu').toggleClass('active');
-    });
-    $(document).on('click', function (e) {
-        if (!$(e.target).closest(".pay_item_select").length) {
-            $('.pay_item_select').removeClass('open');
-        }
+        $('.header').toggleClass('active');
+        $(this).toggleClass('active');
     });
 });
