@@ -8,6 +8,13 @@ $(document).ready(function () {
         // disable: 'mobile'
     });
 
+    var scene = document.querySelectorAll('.parallax');
+    if (scene) {
+        scene.forEach(element => {
+            var parallaxInstance = new Parallax(element)
+        });
+    }
+
     const swiperEvents = new Swiper(".events_slider", {
         slidesPerView: 1,
         spaceBetween: 10,

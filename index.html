@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="vendors/select2/select2.min.css">
     <link rel="stylesheet" href="vendors/animate/aos.min.css">
-    <link rel="stylesheet" href="css/common.css?1">
+    <link rel="stylesheet" href="css/common.css?2">
 </head>
 <!-- Для бэкендера: в секциях со слайдером, где, возможно, блоки будут выводиться циклом, есть data-aos-delay="" с  разными значениями. 
     Например: .events_slider у .events_item, и т.д. -->
@@ -341,26 +341,40 @@
             <div class='events_arena' data-aos="load"><img src="imgs/events_arena.svg" alt=""></div>
         </section>
         <section class='advantages' data-aos="load">
-            <div class="container">
+            <div class='container'>
                 <h2 data-aos="fade-up">Преимущества</h2>
-                <div class='swiper advantages_slider'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+            </div>
+            <div class='swiper advantages_slider'>
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class='container'>
                             <div class="advantages_item">
                                 <div class='advantages_item_left'>
-                                    <div class='advantages_item_title'><span>1.</span>Зарабатывайте<br> в любое время
+                                    <div class='advantages_item_title' data-aos="fade-left">
+                                        <span>1.</span>Зарабатывайте<br> в любое время
                                     </div>
-                                    <div class='advantages_item_text'>Сервис позволяет самостоятельно подбирать
+                                    <div class='advantages_item_text' data-aos="fade-left" data-aos-delay="200">Сервис
+                                        позволяет
+                                        самостоятельно подбирать
                                         мероприятия, помогая сделать график работы удобным и индивидуальным.</div>
-                                    <a href="#" class='btn'>Подать заявку</a>
+                                    <a href="#" class='btn' data-aos="fade-left" data-aos-delay="300">Подать заявку</a>
                                 </div>
-                                <div class='advantages_item_right'>
+                                <div class='advantages_item_right' data-aos="zoom-in">
+                                    <!-- <div class='slide_img slide_img_small parallax'><img data-depth="1.5"
+                                                src="imgs/adv_slide_1.svg" alt=""></div>
+                                        <div class='slide_img slide_img_big parallax'><img data-depth="1.5"
+                                                src="imgs/adv_slide_1.svg" alt=""></div> -->
+                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_1.svg" alt=""></div>
+                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_1.svg" alt=""></div>
                                     <div class='advantages_item_img'><img src="imgs/adv_img_1.jpg" alt=""></div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class='container'>
                             <div class="advantages_item">
                                 <div class='advantages_item_left'>
                                     <div class='advantages_item_title'><span>2.</span>Комфорт<br> и безопасность – наша
@@ -371,12 +385,16 @@
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
+                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_2.svg" alt=""></div>
+                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_2.svg" alt=""></div>
                                     <div class='advantages_item_img'><img src="imgs/adv_img_2.jpg" alt=""></div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class='container'>
                             <div class="advantages_item">
                                 <div class='advantages_item_left'>
                                     <div class='advantages_item_title'><span>3.</span>Посещайте топовые мероприятия
@@ -387,12 +405,17 @@
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
+                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_3_small.svg" alt="">
+                                    </div>
+                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_3.svg" alt=""></div>
                                     <div class='advantages_item_img'><img src="imgs/adv_img_3.jpg" alt=""></div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class='container'>
                             <div class="advantages_item">
                                 <div class='advantages_item_left'>
                                     <div class='advantages_item_title'><span>4.</span>Быть<br> стюардом – быть
@@ -404,12 +427,16 @@
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
+                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_4.svg" alt=""></div>
+                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_4.svg" alt=""></div>
                                     <div class='advantages_item_img'><img src="imgs/adv_img_4.jpg" alt=""></div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class='container'>
                             <div class="advantages_item">
                                 <div class='advantages_item_left'>
                                     <div class='advantages_item_title'><span>5.</span>От стажера<br> до руководителя
@@ -421,30 +448,40 @@
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
+                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_5.svg" alt=""></div>
+                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_5.svg" alt=""></div>
                                     <div class='advantages_item_img'><img src="imgs/adv_img_5.jpg" alt=""></div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class='container'>
                             <div class="advantages_item">
                                 <div class='advantages_item_left'>
-                                    <div class='advantages_item_title'><span>5.</span>Развивайтесь вместе с нами
+                                    <div class='advantages_item_title'><span>6.</span>Развивайтесь вместе с нами
                                     </div>
                                     <div class='advantages_item_text'>Каждое мероприятие – отличная практика для ваших
                                         навыков общения и лидерских качеств.</div>
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
+                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_6.svg" alt=""></div>
+                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_6.svg" alt=""></div>
                                     <div class='advantages_item_img'><img src="imgs/adv_img_6.jpg" alt=""></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='swiper_settings' data-aos="fade-up">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
+                </div>
+                <div class='container'>
+                    <div class='swiper_settings_wrapper'>
+                        <div class='swiper_settings' data-aos="fade-up">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -455,18 +492,18 @@
                 <div class='title_wrapper'>
                     <h2 data-aos="fade-up">Новости</h2>
                     <div class='news_icon' data-aos="zoom-in">
-                        <svg width="136" height="106" viewBox="0 0 136 106" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M72.1458 0L39.2948 38.7483L0 48.467L9.3499 79.5161L16.1728 77.8753L48.6447 105.264L64.9439 100.973L39.2948 71.8169L52.0562 67.9043L100.448 79.5161L72.1458 0Z"
-                                fill="#148D4E" />
-                            <path d="M102.211 49.922C107.683 39.7065 103.839 26.9886 93.623 21.5158" stroke="#148D4E"
-                                stroke-width="11" />
-                            <path d="M117.21 58.3477C127.258 39.5912 120.199 16.2403 101.442 6.19201" stroke="#148D4E"
-                                stroke-width="11" />
-                        </svg>
-                        <!-- <span></span>
-                        <span></span> -->
+                        <div class='parallax'>
+                            <svg data-depth="1.5" width="136" height="106" viewBox="0 0 136 106" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M72.1458 0L39.2948 38.7483L0 48.467L9.3499 79.5161L16.1728 77.8753L48.6447 105.264L64.9439 100.973L39.2948 71.8169L52.0562 67.9043L100.448 79.5161L72.1458 0Z"
+                                    fill="#148D4E" />
+                                <path d="M102.211 49.922C107.683 39.7065 103.839 26.9886 93.623 21.5158"
+                                    stroke="#148D4E" stroke-width="11" />
+                                <path d="M117.21 58.3477C127.258 39.5912 120.199 16.2403 101.442 6.19201"
+                                    stroke="#148D4E" stroke-width="11" />
+                            </svg>
+                        </div>
                     </div>
                     <a href="#" class='btn' data-aos="fade-up">Все новости</a>
                 </div>
@@ -776,7 +813,8 @@
     <script src="vendors/swiper/swiper-bundle.min.js"></script>
     <script src="vendors/select2/select2.full.min.js"></script>
     <script src="vendors/animate/aos.min.js"></script>
-    <script src="js/common.js?1"></script>
+    <script src="vendors/parallax/parallax.min.js"></script>
+    <script src="js/common.js?2"></script>
 </body>
 
 </html>
