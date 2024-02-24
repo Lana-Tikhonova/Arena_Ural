@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="vendors/select2/select2.min.css">
     <link rel="stylesheet" href="vendors/animate/aos.min.css">
-    <link rel="stylesheet" href="css/common.css?2">
+    <link rel="stylesheet" href="css/common.css?3">
 </head>
 <!-- Для бэкендера: в секциях со слайдером, где, возможно, блоки будут выводиться циклом, есть data-aos-delay="" с  разными значениями. 
     Например: .events_slider у .events_item, и т.д. -->
@@ -350,24 +350,29 @@
                     <div class="swiper-slide">
                         <div class='container'>
                             <div class="advantages_item">
-                                <div class='advantages_item_left'>
-                                    <div class='advantages_item_title' data-aos="fade-left">
+                                <div class='advantages_item_left' data-aos="fade-left">
+                                    <div class='advantages_item_title'>
                                         <span>1.</span>Зарабатывайте<br> в любое время
                                     </div>
-                                    <div class='advantages_item_text' data-aos="fade-left" data-aos-delay="200">Сервис
+                                    <div class='advantages_item_text'>Сервис
                                         позволяет
                                         самостоятельно подбирать
                                         мероприятия, помогая сделать график работы удобным и индивидуальным.</div>
-                                    <a href="#" class='btn' data-aos="fade-left" data-aos-delay="300">Подать заявку</a>
+                                    <a href="#" class='btn'>Подать заявку</a>
                                 </div>
-                                <div class='advantages_item_right' data-aos="zoom-in">
-                                    <!-- <div class='slide_img slide_img_small parallax'><img data-depth="1.5"
-                                                src="imgs/adv_slide_1.svg" alt=""></div>
-                                        <div class='slide_img slide_img_big parallax'><img data-depth="1.5"
-                                                src="imgs/adv_slide_1.svg" alt=""></div> -->
-                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_1.svg" alt=""></div>
-                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_1.svg" alt=""></div>
-                                    <div class='advantages_item_img'><img src="imgs/adv_img_1.jpg" alt=""></div>
+                                <div class='advantages_item_right'>
+                                    <div data-aos="zoom-in">
+                                        <div class='slide_img slide_img_small'>
+                                            <div class='parallax'><img data-depth="-1" src="imgs/adv_slide_1.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class='slide_img slide_img_big'>
+                                            <div class='parallax'><img data-depth="1" src="imgs/adv_slide_1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class='advantages_item_img'><img src="imgs/adv_img_1.jpg" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -385,9 +390,18 @@
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
-                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_2.svg" alt=""></div>
-                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_2.svg" alt=""></div>
-                                    <div class='advantages_item_img'><img src="imgs/adv_img_2.jpg" alt=""></div>
+                                    <div>
+                                        <div class='slide_img slide_img_small'>
+                                            <div class='parallax'><img data-depth="-1" src="imgs/adv_slide_2.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class='slide_img slide_img_big'>
+                                            <div class='parallax'><img data-depth="1" src="imgs/adv_slide_2.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class='advantages_item_img'><img src="imgs/adv_img_2.jpg" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -405,10 +419,18 @@
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
-                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_3_small.svg" alt="">
+                                    <div>
+                                        <div class='slide_img slide_img_small'>
+                                            <div class='parallax'><img data-depth="-1" src="imgs/adv_slide_3.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class='slide_img slide_img_big'>
+                                            <div class='parallax'><img data-depth="1" src="imgs/adv_slide_3.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class='advantages_item_img'><img src="imgs/adv_img_3.jpg" alt=""></div>
                                     </div>
-                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_3.svg" alt=""></div>
-                                    <div class='advantages_item_img'><img src="imgs/adv_img_3.jpg" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -427,9 +449,18 @@
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
-                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_4.svg" alt=""></div>
-                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_4.svg" alt=""></div>
-                                    <div class='advantages_item_img'><img src="imgs/adv_img_4.jpg" alt=""></div>
+                                    <div>
+                                        <div class='slide_img slide_img_small'>
+                                            <div class='parallax'><img data-depth="-1" src="imgs/adv_slide_4.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class='slide_img slide_img_big'>
+                                            <div class='parallax'><img data-depth="1" src="imgs/adv_slide_4.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class='advantages_item_img'><img src="imgs/adv_img_4.jpg" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -448,9 +479,18 @@
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
-                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_5.svg" alt=""></div>
-                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_5.svg" alt=""></div>
-                                    <div class='advantages_item_img'><img src="imgs/adv_img_5.jpg" alt=""></div>
+                                    <div>
+                                        <div class='slide_img slide_img_small'>
+                                            <div class='parallax'><img data-depth="-1" src="imgs/adv_slide_5.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class='slide_img slide_img_big'>
+                                            <div class='parallax'><img data-depth="1" src="imgs/adv_slide_5.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class='advantages_item_img'><img src="imgs/adv_img_5.jpg" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -467,9 +507,18 @@
                                     <a href="#" class='btn'>Подать заявку</a>
                                 </div>
                                 <div class='advantages_item_right'>
-                                    <div class='slide_img slide_img_small'><img src="imgs/adv_slide_6.svg" alt=""></div>
-                                    <div class='slide_img slide_img_big'><img src="imgs/adv_slide_6.svg" alt=""></div>
-                                    <div class='advantages_item_img'><img src="imgs/adv_img_6.jpg" alt=""></div>
+                                    <div>
+                                        <div class='slide_img slide_img_small'>
+                                            <div class='parallax'><img data-depth="-1" src="imgs/adv_slide_6.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class='slide_img slide_img_big'>
+                                            <div class='parallax'><img data-depth="1" src="imgs/adv_slide_6.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class='advantages_item_img'><img src="imgs/adv_img_6.jpg" alt=""></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
