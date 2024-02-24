@@ -1,19 +1,5 @@
 $(document).ready(function () {
 
-    let offset
-    if ($(window).width() > 576) {
-        offset = 100;
-    } else {
-        offset = 0;
-    }
-    AOS.init({
-        easing: 'ease-in-out',
-        delay: 100,
-        once: true,
-        duration: 700,
-        offset: offset,
-    });
-
     var scene = document.querySelectorAll('.parallax');
     if (scene) {
         scene.forEach(element => {
@@ -117,7 +103,19 @@ $(document).ready(function () {
             },
         },
     });
-
+    let offset
+    if ($(window).width() > 576) {
+        offset = 100;
+    } else {
+        offset = 0;
+    }
+    AOS.init({
+        easing: 'ease-in-out',
+        delay: 100,
+        once: true,
+        duration: 700,
+        offset: offset,
+    });
     $('.select').select2({
         minimumResultsForSearch: Infinity,
         width: 'auto',

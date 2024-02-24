@@ -2284,6 +2284,9 @@ form .btn {
   }
 }
 @media screen and (max-width: 576px) {
+  .partners_item[data-aos-delay].aos-animate {
+    transition-delay: 0s !important;
+  }
   .advantages_slider .swiper_settings_wrapper {
     padding-bottom: 68%;
     width: calc(100% - 20px);
