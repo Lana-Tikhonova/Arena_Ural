@@ -766,11 +766,10 @@ form .btn {
   padding: 26px 90px 20px;
   transform: rotate(-4deg);
   cursor: pointer;
-  justify-self: 166px;
   z-index: 1;
   animation: animBtn 7s ease-in-out infinite;
   text-align: center;
-  animation-delay: 3s;
+  animation-delay: 4s;
   transition: all 0.2s ease;
 }
 .home_btn:hover {
@@ -812,6 +811,7 @@ form .btn {
 
 .home_btn_wrapper {
   animation: animImg 7s ease-in-out infinite;
+  animation-delay: 2s;
   position: relative;
   transition: all 0.2s ease;
 }
