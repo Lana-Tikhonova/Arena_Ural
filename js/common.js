@@ -37,6 +37,7 @@ $(document).ready(function () {
         watchOverflow: true,
         watchSlidesVisibility: true,
         effect: "fade",
+        loop: true,
         pagination: {
             el: ".swiper-pagination",
         },
@@ -103,6 +104,7 @@ $(document).ready(function () {
             },
         },
     });
+
     let offset
     if ($(window).width() > 576) {
         offset = 100;
@@ -124,5 +126,30 @@ $(document).ready(function () {
     $('.mobile_menu_btn').on('click', function () {
         $('.header').toggleClass('active');
         $(this).toggleClass('active');
-    });
+    })
+
+    // function scaleBlock(container, block, event) {
+    //     const block_width1 = container.offsetWidth + 1000;
+    //     const rect = container.getBoundingClientRect();
+    //     const centerX = rect.left + rect.width / 2;
+    //     const centerY = rect.top + rect.height / 2;
+    //     const deltaX = event.clientX - centerX;
+    //     const deltaY = event.clientY - centerY;
+    //     const scale = 1 + Math.abs(deltaX + deltaY) / block_width1;
+
+    //     block.style.transform = `scale(${scale})`;
+    // }
+
+
+    // const blockList = document.querySelectorAll('.scale_block');
+    // const blocksItem = document.querySelectorAll('.home_image img');
+
+
+    // blockList.forEach((item, index) => {
+    //     console.log(item, blocksItem[index]);
+    //     item.addEventListener('mousemove', (event) => {
+    //         scaleBlock(item, blocksItem[index], event);
+    //     })
+    // })
+
 });
