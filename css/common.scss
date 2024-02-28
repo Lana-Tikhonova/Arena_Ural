@@ -609,8 +609,12 @@ svg {
 		border: 1px solid #F2F4F7;
 		border-radius: 8px;
 		background: #fff;
-		margin-top: 8px;
 		box-shadow: 0 4px 6px -2px rgba(16, 24, 40, 0.03), 0 12px 16px -4px rgba(16, 24, 40, 0.08);
+
+		&.select2-dropdown--below {
+			margin-top: 8px;
+
+		}
 	}
 
 	.select2-results {
@@ -1025,13 +1029,6 @@ form {
 		width: 1943px;
 	}
 
-	.home_bg_svg_two {
-		top: calc(50% - 30px);
-		transform: translate(-50%, -50%);
-		left: 50%;
-		width: 529.07px;
-	}
-
 	h1 {
 		text-align: center;
 		font-size: 124.36px;
@@ -1104,6 +1101,10 @@ form {
 }
 
 .home_bg_svg_two {
+	top: calc(50% - 30px);
+	transform: translate(-50%, -50%);
+	left: 50%;
+	width: 529.07px;
 	display: none;
 	position: absolute;
 	height: auto;
@@ -3370,8 +3371,8 @@ form {
 
 	.home_bg_svg {
 		top: 50%;
-		right: -157px;
-		width: 1193px;
+		right: -11%;
+		width: 83%;
 		transform: translateY(-50%);
 	}
 }
@@ -3523,6 +3524,10 @@ form {
 	.events_col {
 		width: 50%;
 	}
+
+	.btn_big {
+		font-size: 20px;
+	}
 }
 
 @media screen and (max-width:992px) {
@@ -3542,6 +3547,11 @@ form {
 
 	.breadcrumb {
 		border-radius: 6px;
+	}
+
+	.head .home_bg_svg {
+		width: 100%;
+		right: -15%;
 	}
 }
 
@@ -3568,7 +3578,7 @@ form {
 	}
 
 	.btn_big {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	h1 {
@@ -3595,10 +3605,24 @@ form {
 
 @media screen and (max-width:576px) {
 	.head {
+
 		.btn_big {
 			width: 100%;
 			max-width: initial;
 		}
+	}
+
+	.head_container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: 370px;
+	}
+
+	.btn_big {
+		font-size: 16px;
+		padding: 10px;
 	}
 
 	h1 {
@@ -3608,6 +3632,21 @@ form {
 
 	.h1_subtitle {
 		font-size: 16px;
+	}
+
+	.tabs_link_item {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width:440px) {
+
+	.tabs_link_list {
+		gap: 10px;
+	}
+
+	.tabs_link_item {
+		font-size: 13px;
 	}
 }
 
