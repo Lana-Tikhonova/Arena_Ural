@@ -171,8 +171,8 @@ $(document).ready(function () {
         const picker = new easepick.create({
             element: datapisker,
             css: [
-                "../vendors/easepick/easepick.css?v=1",
-                "../vendors/easepick/customize_easepick.css",
+                "vendors/easepick/easepick.css?v=1",
+                "vendors/easepick/customize_easepick.css?v=1",
             ],
             setup(picker) {
                 picker.on('select', (e) => {
