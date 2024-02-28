@@ -192,6 +192,16 @@ button {
   display: none !important;
 }
 
+.orange {
+  color: #EF723B;
+}
+.orange svg {
+  stroke: #EF723B;
+}
+.orange svg.stroke_black {
+  stroke: #EF723B;
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -221,20 +231,23 @@ svg {
 svg.fill_none {
   fill: none;
 }
+svg.stroke_orange {
+  stroke: #EF723B;
+}
+svg.stroke_black {
+  stroke: #000000;
+}
 svg.w24 {
   width: 24px;
   height: 24px;
-  stroke: #000000;
 }
 svg.w20 {
   width: 20px;
   height: 20px;
-  stroke: #000000;
 }
 svg.w16 {
   width: 16px;
   height: 16px;
-  stroke: #000000;
 }
 svg.stroke_none {
   stroke: none;
@@ -249,6 +262,12 @@ svg.stroke_none {
   text-decoration: none;
 }
 
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .label {
   display: flex;
   align-items: center;
@@ -261,13 +280,12 @@ svg.stroke_none {
   min-width: 40px;
   min-height: 40px;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
-}
-
-.label_text {
   font-weight: 600;
   font-size: 16px;
   color: #EF723B;
+  gap: 10px;
   padding: 10px;
+  flex: 0 0 auto;
 }
 
 .item_title {
@@ -853,13 +871,19 @@ form .btn {
   color: #EF723B;
 }
 
+.bg_svg_orange .home_bg_svg,
+.bg_svg_orange .home_bg_svg_two {
+  stroke: #EF723B;
+}
+
+.home_bg_svg,
+.home_bg_svg_two {
+  stroke: #fff;
+}
+
 .bg_svg_block {
   overflow: hidden;
   position: relative;
-}
-.bg_svg_block.aos-animate .home_bg_svg,
-.bg_svg_block.aos-animate .home_bg_svg_two {
-  stroke: #fff;
 }
 .bg_svg_block.aos-animate .home_bg_svg .svg-elem-1,
 .bg_svg_block.aos-animate .home_bg_svg .svg-elem-2,
@@ -3104,4 +3128,63 @@ form .btn {
     margin-left: 0;
     margin-right: 0;
   }
+}
+.event_block {
+  display: flex;
+}
+.event_block h1 {
+  font-size: 36px;
+  line-height: 122.222%;
+  margin-bottom: 16px;
+}
+.event_block .labels {
+  margin-bottom: 40px;
+}
+
+.event_block_left {
+  width: 50%;
+}
+
+.event_block_right {
+  width: 50%;
+}
+.event_block_right img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.user_block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475467;
+  margin-bottom: 11px;
+}
+
+.user_block_img {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+}
+
+.user_block_name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 133.333%;
+}
+
+.info_list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-bottom: 40px;
+  color: #475467;
+}
+.info_list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }

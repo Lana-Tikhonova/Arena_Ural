@@ -45,6 +45,22 @@
      <symbol viewBox="0 0 24 24" id="passport" xmlns="http://www.w3.org/2000/svg">
         <path d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20M4 19.5C4 20.163 4.26339 20.7989 4.73223 21.2678C5.20107 21.7366 5.83696 22 6.5 22H20V2H6.5C5.83696 2 5.20107 2.26339 4.73223 2.73223C4.26339 3.20107 4 3.83696 4 4.5V19.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol viewBox="0 0 24 24" id="study" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1845_72)">
+        <mask id="mask0_1845_72" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+        <path d="M24.7661 0.531433H0.766113V24.5314H24.7661V0.531433Z" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_1845_72)">
+        <path d="M5.76587 15.0314V18.0314C10.1725 20.2347 15.3593 20.2347 19.7659 18.0314V15.0314M12.7659 5.03143L2.76587 10.0314L12.7659 15.0314L22.7659 10.0314L12.7659 5.03143Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1.76636 15.5314L2.26635 13.5315L2.76636 15.5314L2.26635 16.5315L1.76636 15.5314Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        </g>
+        <defs>
+        <clipPath id="clip0_1845_72">
+        <rect width="24" height="24" fill="white" transform="translate(0.766113 0.531433)"/>
+        </clipPath>
+        </defs>
+    </symbol>
      <symbol viewBox="0 0 24 24" id="alert" xmlns="http://www.w3.org/2000/svg">
         <path d="M11.9998 7.99996V12M11.9998 16H12.0098M10.2898 2.85996L1.81978 17C1.64514 17.3024 1.55274 17.6453 1.55177 17.9945C1.55079 18.3437 1.64127 18.6871 1.8142 18.9905C1.98714 19.2939 2.2365 19.5467 2.53748 19.7238C2.83847 19.9009 3.18058 19.9961 3.52978 20H20.4698C20.819 19.9961 21.1611 19.9009 21.4621 19.7238C21.7631 19.5467 22.0124 19.2939 22.1854 18.9905C22.3583 18.6871 22.4488 18.3437 22.4478 17.9945C22.4468 17.6453 22.3544 17.3024 22.1798 17L13.7098 2.85996C13.5315 2.56607 13.2805 2.32308 12.981 2.15444C12.6814 1.98581 12.3435 1.89722 11.9998 1.89722C11.656 1.89722 11.3181 1.98581 11.0186 2.15444C10.7191 2.32308 10.468 2.56607 10.2898 2.85996Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>

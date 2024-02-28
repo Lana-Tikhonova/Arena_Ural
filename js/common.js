@@ -190,7 +190,8 @@ $(document).ready(function () {
             calendars: datapickerGrid,
             autoApply: false,
             RangePlugin: {
-                delimiter: "-"
+                delimiter: "-",
+                tooltip: false
             },
             AmpPlugin: {
                 locale: {
@@ -203,9 +204,6 @@ $(document).ready(function () {
                 apply: "Применить",
                 previousMonth: '<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 25L17.5 20L22.5 15" stroke="#667085" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>',
                 nextMonth: '<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 25L22.5 20L17.5 15" stroke="#667085" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-                one: 'day',
-                other: 'days',
-
             },
             plugins: [
                 "RangePlugin",
