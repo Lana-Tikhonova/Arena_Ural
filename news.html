@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="vendors/select2/select2.min.css">
     <link rel="stylesheet" href="vendors/animate/aos.min.css">
-    <link rel="stylesheet" href="css/common.css?9">
+    <link rel="stylesheet" href="css/common.css?10">
 </head>
 <!-- Для бэкендера: в секциях со слайдером, где, возможно, блоки будут выводиться циклом, есть data-aos-delay="" с  разными значениями. 
     Например: .events_slider у .events_item, и т.д. -->
@@ -41,10 +41,8 @@
         <div class="container">
             <div class="header_row">
                 <a href="/" class="logo">
-                    <picture>
-                        <source media="(max-width: 992px)" srcset="imgs/logo_white.svg">
-                        <img src="imgs/logo.svg" alt="">
-                    </picture>
+                    <img src="imgs/logo.svg" alt="">
+                    <img src="imgs/logo_white.svg" alt="">
                 </a>
                 <nav class='menu'>
                     <ul>
@@ -80,193 +78,198 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class='head bg_svg_block' data-aos="load">
-            <svg class='home_bg_svg' width="100%" height="100%" viewBox="0 0 1945 1268" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="1311" cy="634" r="633" stroke-width="2" stroke-miterlimit="10" class="svg-elem-1"></circle>
-                <circle cx="1311" cy="634" r="216" stroke-width="2" stroke-miterlimit="10" class="svg-elem-2"></circle>
-                <circle cx="340" cy="634" r="339" stroke-width="2" stroke-miterlimit="10" class="svg-elem-3"></circle>
-                <circle cx="340" cy="634" r="216" stroke-width="2" stroke-miterlimit="10" class="svg-elem-4"></circle>
-                <path d="M557 628L1095 628" stroke-width="2" stroke-miterlimit="10" class="svg-elem-5">
-                </path>
-            </svg>
+    <div class='body_content'>
+        <main>
+            <section class='head bg_svg_block' data-aos="load">
+                <svg class='home_bg_svg' width="100%" height="100%" viewBox="0 0 1945 1268" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="1311" cy="634" r="633" stroke-width="2" stroke-miterlimit="10" class="svg-elem-1">
+                    </circle>
+                    <circle cx="1311" cy="634" r="216" stroke-width="2" stroke-miterlimit="10" class="svg-elem-2">
+                    </circle>
+                    <circle cx="340" cy="634" r="339" stroke-width="2" stroke-miterlimit="10" class="svg-elem-3">
+                    </circle>
+                    <circle cx="340" cy="634" r="216" stroke-width="2" stroke-miterlimit="10" class="svg-elem-4">
+                    </circle>
+                    <path d="M557 628L1095 628" stroke-width="2" stroke-miterlimit="10" class="svg-elem-5">
+                    </path>
+                </svg>
 
-            <svg class='home_bg_svg_two' width="531" height="738" viewBox="0 0 531 738" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="265.537" cy="265.147" r="264.537" transform="rotate(-90 265.537 265.147)"
-                    stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-1"></circle>
-                <circle cx="265.269" cy="265.147" r="90.2687" transform="rotate(-90 265.269 265.147)"
-                    stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-2"></circle>
-                <ellipse cx="265.5" cy="633.11" rx="103.5" ry="103.5" transform="rotate(-90 265.5 633.11)"
-                    stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-3"></ellipse>
-                <ellipse cx="265.5" cy="633.11" rx="52.5" ry="52.5" transform="rotate(-90 265.5 633.11)"
-                    stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-4"></ellipse>
-                <path d="M265 580.252L265 355.416" stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-5">
-                </path>
-            </svg>
-            <div class='container'>
-                <ul class='breadcrumb'>
-                    <li class='breadcrumb_item'>
-                        <a href="/" class='breadcrumb_link'>Главная</a>
-                        <span class='breadcrumb_pipe'></span>
-                    </li>
-                    <li class='breadcrumb_item'>
-                        <span class='breadcrumb_link'>Новости</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="container head_container">
-                <div class='head_block'>
-                    <div class='head_block_left' data-aos="fade-left">
-                        <h1>Все новости</h1>
-                        <div class='h1_subtitle'>Список новостей</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class='filter' data-aos="fade-left" data-aos-delay="200">
-                    <div class='label_wrapper'>
-                        <div class='label_title'>Дата мероприятия</div>
-                        <div class="date_input date_selection_item">
-                            <input type="text" class="form_input date_input_input" placeholder="ДД.ММ.ГГГГ—ДД.ММ.ГГГГ"
-                                readonly="">
-                            <span class="date_input_clear hide">
-                                <svg class='w20 fill_none'>
-                                    <use xlink:href="imgs/sprite.symbol.svg#close"></use>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                    <div class='label_wrapper'>
-                        <div class='label_title'>Тип новостей</div>
-                        <select class="category_select select" name="category">
-                            <option value="Все">Все</option>
-                            <option value="Футбол">Футбол</option>
-                            <option value="Хоккей">Хоккей</option>
-                            <option value="Другие спортивные мероприятия">Другие спортивные мероприятия</option>
-                            <option value="Культурно-массовые мероприятия">Культурно-массовые мероприятия</option>
-                        </select>
-                    </div>
-                </div>
-                <div class='news_list'>
-                    <div class='news_col' data-aos="fade-up" data-aos-delay="100">
-                        <div class='news_item'>
-                            <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
-                            <div class='news_item_body'>
-                                <div class='news_item_category'>Футбол</div>
-                                <a href="#" class='item_title'>
-                                    <span>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
-                                        justo
-                                        massa.
-                                    </span>
-                                    <svg class='w24 stroke_black'>
-                                        <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class='news_item_footer'>
-                                <div class='news_item_date'>20 Янв 2022</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='news_col' data-aos="fade-up" data-aos-delay="200">
-                        <div class='news_item'>
-                            <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
-                            <div class='news_item_body'>
-                                <div class='news_item_category'>Футбол</div>
-                                <a href="#" class='item_title'>
-                                    <span>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
-                                        justo
-                                        massa.
-                                    </span>
-                                    <svg class='w24 stroke_black'>
-                                        <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class='news_item_footer'>
-                                <div class='news_item_date'>20 Янв 2022</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='news_col' data-aos="fade-up" data-aos-delay="300">
-                        <div class='news_item'>
-                            <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
-                            <div class='news_item_body'>
-                                <div class='news_item_category'>Футбол</div>
-                                <a href="#" class='item_title'>
-                                    <span>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
-                                        justo
-                                        massa.
-                                    </span>
-                                    <svg class='w24 stroke_black'>
-                                        <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class='news_item_footer'>
-                                <div class='news_item_date'>20 Янв 2022</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='news_col' data-aos="fade-up" data-aos-delay="400">
-                        <div class='news_item'>
-                            <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
-                            <div class='news_item_body'>
-                                <div class='news_item_category'>Футбол</div>
-                                <a href="#" class='item_title'>
-                                    <span>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
-                                        justo
-                                        massa.
-                                    </span>
-                                    <svg class='w24 stroke_black'>
-                                        <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class='news_item_footer'>
-                                <div class='news_item_date'>20 Янв 2022</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='news_col' data-aos="fade-up" data-aos-delay="500">
-                        <div class='news_item'>
-                            <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
-                            <div class='news_item_body'>
-                                <div class='news_item_category'>Футбол</div>
-                                <a href="#" class='item_title'>
-                                    <span>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
-                                        justo
-                                        massa.
-                                    </span>
-                                    <svg class='w24 stroke_black'>
-                                        <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class='news_item_footer'>
-                                <div class='news_item_date'>20 Янв 2022</div>
-                            </div>
+                <svg class='home_bg_svg_two' width="531" height="738" viewBox="0 0 531 738" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="265.537" cy="265.147" r="264.537" transform="rotate(-90 265.537 265.147)"
+                        stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-1"></circle>
+                    <circle cx="265.269" cy="265.147" r="90.2687" transform="rotate(-90 265.269 265.147)"
+                        stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-2"></circle>
+                    <ellipse cx="265.5" cy="633.11" rx="103.5" ry="103.5" transform="rotate(-90 265.5 633.11)"
+                        stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-3"></ellipse>
+                    <ellipse cx="265.5" cy="633.11" rx="52.5" ry="52.5" transform="rotate(-90 265.5 633.11)"
+                        stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-4"></ellipse>
+                    <path d="M265 580.252L265 355.416" stroke-width="0.835821" stroke-miterlimit="10"
+                        class="svg-elem-5">
+                    </path>
+                </svg>
+                <div class="container head_container">
+                    <ul class='breadcrumb' data-aos="fade-down">
+                        <li class='breadcrumb_item'>
+                            <a href="/" class='breadcrumb_link'>Главная</a>
+                            <span class='breadcrumb_pipe'></span>
+                        </li>
+                        <li class='breadcrumb_item'>
+                            <span class='breadcrumb_link'>Новости</span>
+                        </li>
+                    </ul>
+                    <div class='head_block'>
+                        <div class='head_block_left' data-aos="fade-left">
+                            <h1>Все новости</h1>
+                            <div class='h1_subtitle'>Список новостей</div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class='filter' data-aos="fade-left" data-aos-delay="200">
+                        <div class='label_wrapper'>
+                            <div class='label_title'>Дата мероприятия</div>
+                            <div class="date_input date_selection_item">
+                                <input type="text" class="form_input date_input_input"
+                                    placeholder="ДД.ММ.ГГГГ—ДД.ММ.ГГГГ" readonly="">
+                                <span class="date_input_clear hide">
+                                    <svg class='w20 fill_none'>
+                                        <use xlink:href="imgs/sprite.symbol.svg#close"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class='label_wrapper'>
+                            <div class='label_title'>Тип новостей</div>
+                            <select class="category_select select" name="category">
+                                <option value="Все">Все</option>
+                                <option value="Футбол">Футбол</option>
+                                <option value="Хоккей">Хоккей</option>
+                                <option value="Другие спортивные мероприятия">Другие спортивные мероприятия</option>
+                                <option value="Культурно-массовые мероприятия">Культурно-массовые мероприятия</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class='news_list'>
+                        <div class='news_col' data-aos="fade-up" data-aos-delay="100">
+                            <div class='news_item'>
+                                <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
+                                <div class='news_item_body'>
+                                    <div class='news_item_category'>Футбол</div>
+                                    <a href="#" class='item_title'>
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
+                                            justo
+                                            massa.
+                                        </span>
+                                        <svg class='w24 stroke_black'>
+                                            <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class='news_item_footer'>
+                                    <div class='news_item_date'>20 Янв 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='news_col' data-aos="fade-up" data-aos-delay="200">
+                            <div class='news_item'>
+                                <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
+                                <div class='news_item_body'>
+                                    <div class='news_item_category'>Футбол</div>
+                                    <a href="#" class='item_title'>
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
+                                            justo
+                                            massa.
+                                        </span>
+                                        <svg class='w24 stroke_black'>
+                                            <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class='news_item_footer'>
+                                    <div class='news_item_date'>20 Янв 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='news_col' data-aos="fade-up" data-aos-delay="300">
+                            <div class='news_item'>
+                                <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
+                                <div class='news_item_body'>
+                                    <div class='news_item_category'>Футбол</div>
+                                    <a href="#" class='item_title'>
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
+                                            justo
+                                            massa.
+                                        </span>
+                                        <svg class='w24 stroke_black'>
+                                            <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class='news_item_footer'>
+                                    <div class='news_item_date'>20 Янв 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='news_col' data-aos="fade-up" data-aos-delay="400">
+                            <div class='news_item'>
+                                <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
+                                <div class='news_item_body'>
+                                    <div class='news_item_category'>Футбол</div>
+                                    <a href="#" class='item_title'>
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
+                                            justo
+                                            massa.
+                                        </span>
+                                        <svg class='w24 stroke_black'>
+                                            <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class='news_item_footer'>
+                                    <div class='news_item_date'>20 Янв 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='news_col' data-aos="fade-up" data-aos-delay="500">
+                            <div class='news_item'>
+                                <div class='item_img'><img src="imgs/events_img.png" alt=""></div>
+                                <div class='news_item_body'>
+                                    <div class='news_item_category'>Футбол</div>
+                                    <a href="#" class='item_title'>
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum
+                                            justo
+                                            massa.
+                                        </span>
+                                        <svg class='w24 stroke_black'>
+                                            <use xlink:href="imgs/sprite.symbol.svg#arrow_up_right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class='news_item_footer'>
+                                    <div class='news_item_date'>20 Янв 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
     <footer class='footer'>
         <div class="container">
             <div class='footer_top'>
