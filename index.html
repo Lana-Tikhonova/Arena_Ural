@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="vendors/select2/select2.min.css">
     <link rel="stylesheet" href="vendors/animate/aos.min.css">
-    <link rel="stylesheet" href="css/common.css?8">
+    <link rel="stylesheet" href="css/common.css?9">
 </head>
 <!-- Для бэкендера: в секциях со слайдером, где, возможно, блоки будут выводиться циклом, есть data-aos-delay="" с  разными значениями. 
     Например: .events_slider у .events_item, и т.д. -->
@@ -48,7 +48,7 @@
                 </a>
                 <nav class='menu'>
                     <ul>
-                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="events.html">Мероприятия</a></li>
                         <li><a href="#">Обучение</a></li>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Документы</a></li>
@@ -60,7 +60,7 @@
             <div class='mobile_menu'>
                 <nav class='menu'>
                     <ul>
-                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="events.html">Мероприятия</a></li>
                         <li><a href="#">Обучение</a></li>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Документы</a></li>
@@ -81,7 +81,7 @@
         </div>
     </header>
     <main>
-        <section class='home' data-aos="load">
+        <section class='home bg_svg_block' data-aos="load">
             <!-- <style>
                 .scale_block_wrapper {
                     background: red;
@@ -108,29 +108,25 @@
             </div> -->
             <svg class='home_bg_svg' width="100%" height="100%" viewBox="0 0 1945 1268" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <circle cx="1311" cy="634" r="633" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                    class="svg-elem-1"></circle>
-                <circle cx="1311" cy="634" r="216" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                    class="svg-elem-2"></circle>
-                <circle cx="340" cy="634" r="339" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                    class="svg-elem-3"></circle>
-                <circle cx="340" cy="634" r="216" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                    class="svg-elem-4"></circle>
-                <path d="M557 628L1095 628" stroke="white" stroke-width="2" stroke-miterlimit="10" class="svg-elem-5">
+                <circle cx="1311" cy="634" r="633" stroke-width="2" stroke-miterlimit="10" class="svg-elem-1"></circle>
+                <circle cx="1311" cy="634" r="216" stroke-width="2" stroke-miterlimit="10" class="svg-elem-2"></circle>
+                <circle cx="340" cy="634" r="339" stroke-width="2" stroke-miterlimit="10" class="svg-elem-3"></circle>
+                <circle cx="340" cy="634" r="216" stroke-width="2" stroke-miterlimit="10" class="svg-elem-4"></circle>
+                <path d="M557 628L1095 628" stroke-width="2" stroke-miterlimit="10" class="svg-elem-5">
                 </path>
             </svg>
             <svg class='home_bg_svg_two' width="531" height="738" viewBox="0 0 531 738" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <circle cx="265.537" cy="265.147" r="264.537" transform="rotate(-90 265.537 265.147)" stroke="white"
+                <circle cx="265.537" cy="265.147" r="264.537" transform="rotate(-90 265.537 265.147)"
                     stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-1"></circle>
-                <circle cx="265.269" cy="265.147" r="90.2687" transform="rotate(-90 265.269 265.147)" stroke="white"
+                <circle cx="265.269" cy="265.147" r="90.2687" transform="rotate(-90 265.269 265.147)"
                     stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-2"></circle>
                 <ellipse cx="265.5" cy="633.11" rx="103.5" ry="103.5" transform="rotate(-90 265.5 633.11)"
-                    stroke="white" stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-3"></ellipse>
-                <ellipse cx="265.5" cy="633.11" rx="52.5" ry="52.5" transform="rotate(-90 265.5 633.11)" stroke="white"
+                    stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-3"></ellipse>
+                <ellipse cx="265.5" cy="633.11" rx="52.5" ry="52.5" transform="rotate(-90 265.5 633.11)"
                     stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-4"></ellipse>
-                <path d="M265 580.252L265 355.416" stroke="white" stroke-width="0.835821" stroke-miterlimit="10"
-                    class="svg-elem-5"></path>
+                <path d="M265 580.252L265 355.416" stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-5">
+                </path>
             </svg>
 
             <div class="container">
@@ -180,7 +176,7 @@
 
                             </select>
                         </div>
-                        <a href="#" class='btn'>Все мероприятия</a>
+                        <a href="events.html" class='btn'>Все мероприятия</a>
                     </div>
                 </div>
                 <div class='slider_wrapper'>
@@ -892,7 +888,9 @@
     <script src="vendors/select2/select2.full.min.js"></script>
     <script src="vendors/animate/aos.min.js"></script>
     <script src="vendors/parallax/parallax.min.js"></script>
-    <script src="js/common.js?5"></script>
+    <script src="vendors/easepick/easepick.umd.min.js"></script>
+    <script src="vendors/imask/imask.js"></script>
+    <script src="js/common.js?6"></script>
 </body>
 
 </html>
