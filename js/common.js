@@ -108,6 +108,24 @@ $(document).ready(function () {
         },
     });
 
+    // партнеры
+    const swiperNewsPage = new Swiper(".news_page_slider", {
+        slidesPerView: 1,
+        spaceBetween: 52,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        watchOverflow: true,
+        watchSlidesVisibility: true,
+        autoHeight: true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
     // анимация
     let offset
     if ($(window).width() > 576) {
@@ -262,4 +280,27 @@ $(document).ready(function () {
         }
     });
 
+    // открытие картинки во весь экран
+    if ($('[data-fancybox="gallery"]').length) {
+        $('[data-fancybox="gallery"]').fancybox({
+            idleTime: false,
+            animationEffect: "fade",
+            smallBtn: false,
+            contentClick: "close",
+            mobile: {
+                clickSlide: "close"
+            },
+        });
+    }
+
+    // видео
+    const players = Array.from(document.querySelectorAll('.player_video')).map(p => new Plyr(p, {
+        autoplay: false,
+    }));
+
+    // for (let index = 0; index < players.length; index++) {
+    //     $('.btn_plyr_play').on('click', function (e) {
+    //         players[index].play();
+    //     })
+    // }
 });
