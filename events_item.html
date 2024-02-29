@@ -31,11 +31,12 @@
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="vendors/select2/select2.min.css">
     <link rel="stylesheet" href="vendors/animate/aos.min.css">
-    <link rel="stylesheet" href="css/common.css?10">
+    <link rel="stylesheet" href="css/common.css?11">
 </head>
 <!-- Для бэкендера: в секциях со слайдером, где, возможно, блоки будут выводиться циклом, есть data-aos-delay="" с  разными значениями. 
     Например: .events_slider у .events_item, и т.д. -->
 <!-- .white_header - класс для страниц с белым хедером на мобилке -->
+<!-- .additional_page - класс для секций как например на стр одного мероптияния или одной новости -->
 
 <body class='white_header'>
     <header class='header'>
@@ -53,7 +54,7 @@
                         <li><a href="#">Документы</a></li>
                     </ul>
                 </nav>
-                <a href="#" class='btn'>Личный кабинет</a>
+                <a href="#" class='btn btn_small'>Личный кабинет</a>
                 <div class='mobile_menu_btn'><span></span></div>
             </div>
             <div class='mobile_menu'>
@@ -81,9 +82,9 @@
     </header>
     <div class='body_content'>
         <main>
-            <section class='event_page'>
-                <div class='event_page_wrapper bg_svg_block bg_svg_orange' data-aos="load">
-                    <svg class='home_bg_svg' width="100%" height="100%" viewBox="0 0 1945 1268" fill="none"
+            <section class='additional_page event_page'>
+                <div class='additional_page_wrapper bg_svg_block bg_svg_orange' data-aos="load">
+                    <svg class='bg_svg' width="100%" height="100%" viewBox="0 0 1945 1268" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <circle cx="1311" cy="634" r="633" stroke-width="2" stroke-miterlimit="10" class="svg-elem-1">
                         </circle>
@@ -96,8 +97,7 @@
                         <path d="M557 628L1095 628" stroke-width="2" stroke-miterlimit="10" class="svg-elem-5">
                         </path>
                     </svg>
-
-                    <svg class='home_bg_svg_two' width="531" height="738" viewBox="0 0 531 738" fill="none"
+                    <svg class='bg_svg_two' width="531" height="738" viewBox="0 0 531 738" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <circle cx="265.537" cy="265.147" r="264.537" transform="rotate(-90 265.537 265.147)"
                             stroke-width="0.835821" stroke-miterlimit="10" class="svg-elem-1"></circle>
@@ -191,6 +191,32 @@
                                         19:30 - 21:00
                                     </li>
                                 </ul>
+                                <div class='share_block'>
+                                    <div class='btn btn_small'>Подать заявку</div>
+                                    <div class='btn btn_small btn_icon btn_white copy_block'>
+                                        <svg class="w20 fill_none">
+                                            <use xlink:href="imgs/sprite.symbol.svg#copy"></use>
+                                        </svg>
+                                        Копировать ссылку
+                                    </div>
+                                    <div class='social_list_white'>
+                                        <a href="#">
+                                            <svg class="w20">
+                                                <use xlink:href="imgs/sprite.symbol.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg class="w20">
+                                                <use xlink:href="imgs/sprite.symbol.svg#telegram"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg class="w20">
+                                                <use xlink:href="imgs/sprite.symbol.svg#whatsap"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <div class='event_block_right'>
                                 <div class='event_block_img'><img src="/imgs/Image.jpg" alt=""></div>
@@ -203,6 +229,74 @@
                     <span></span>
                     <span></span>
                     <span></span>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="events_data">
+                        <div class='events_data_col'>
+                            <div class='events_data_item'>
+                                <div class='events_data_icon'><img src="/imgs/rocket.svg" alt=""></div>
+                                <div class='events_data_title'>Трансфер</div>
+                                <div class='events_data_text'>будет или нет организован трансфер</div>
+                            </div>
+                        </div>
+                        <div class='events_data_col'>
+                            <div class='events_data_item'>
+                                <div class='events_data_icon'><img src="/imgs/activity.svg" alt=""></div>
+                                <div class='events_data_title'>Парковка</div>
+                                <div class='events_data_text'>наличие парковки,<br> да/нет</div>
+                            </div>
+                        </div>
+                        <div class='events_data_col'>
+                            <div class='events_data_item'>
+                                <div class='events_data_icon'><img src="/imgs/coffee.svg" alt=""></div>
+                                <div class='events_data_title'>Питание</div>
+                                <div class='events_data_text'>да/нет, включено/не включено</div>
+                            </div>
+                        </div>
+                        <div class='events_data_col'>
+                            <div class='events_data_item'>
+                                <div class='events_data_icon'><img src="/imgs/coin-stack.svg" alt=""></div>
+                                <div class='events_data_title'>Вознаграждение <br>за участие</div>
+                                <div class='events_data_text'>Есть или нет</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- постаралась сделать как будто это из админки выводится через тинимайс, на стр новости весь контент так же обернут в  .content-->
+                    <div class='content'>
+                        <h2>Описание</h2>
+                        <p> Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend
+                            faucibus eget vestibulum felis. Dictum qui<a href="#">e arcu amet</a>s montes, sit sit.
+                            Tellus aliquam enim urna,
+                            etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien
+                            varius id.</p>
+                        <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus
+                            velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at.
+                            Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet
+                            sodales id est ac volutpat.</p>
+                        <hr>
+                        <h2>Условия участия/Требования к участникам</h2>
+                        <div class='requirements_list'>
+                            <div class='requirements_item'>Особые требования к одежде или личному снаряжению</div>
+                            <div class='requirements_item'>Лица, достигшие 18 лет</div>
+                            <div class='requirements_item'>Лица, имеющие гражданство РФ</div>
+                            <div class='requirements_item'>Взять с собой паспорт</div>
+                            <div class='requirements_item'>Наличие паспорта болельщика: да/нет </div>
+                        </div>
+                        <hr>
+                        <h2>Правила и регуляции</h2>
+                        <p> Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend
+                            faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna,
+                            etiam. Mauris posuere vulputat<a href="#">e arcu amet</a>, vitae nisi, tellus tincidunt. At
+                            feugiat sapien
+                            varius id.</p>
+                        <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus
+                            velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at.
+                            Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet
+                            sodales id est ac volutpat.</p>
+                        <hr>
+                    </div>
                 </div>
             </section>
         </main>
