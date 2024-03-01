@@ -111,6 +111,10 @@ table {
   font-weight: 700;
 }
 
+.text_grey {
+  color: #475467;
+}
+
 h1,
 h2,
 h3,
@@ -127,6 +131,15 @@ h1 {
   margin-bottom: 24px;
   font-family: "Code", sans-serif;
   font-weight: 700;
+}
+
+.h1 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1.2px;
+  margin-bottom: 24px;
 }
 
 h2 {
@@ -372,6 +385,9 @@ svg.stroke_orange {
 }
 svg.stroke_black {
   stroke: #000000;
+}
+svg.stroke_black_two {
+  stroke: #344054;
 }
 svg.w24 {
   width: 24px;
@@ -2886,6 +2902,87 @@ form .btn {
   line-height: 150%;
 }
 
+.page_404 {
+  display: flex;
+  padding: 64px 0 96px;
+}
+
+.page_404_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page_404_left {
+  padding-right: 64px;
+  width: 51%;
+}
+
+.page_404_right {
+  width: 49%;
+}
+
+.page_404_number_wrapper {
+  background: #148D4E;
+  border-radius: 90px;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 94%;
+  width: 100%;
+  position: relative;
+}
+
+.page_404_number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.page_404_number .bg_svg {
+  display: block;
+  top: 50%;
+  right: -45%;
+  width: 202%;
+  max-width: 1195px;
+  transform: translateY(-50%) scale(-1, -1);
+}
+
+.page_404_number_text {
+  color: #EF723B;
+  text-align: center;
+  font-size: 213.839px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.h1_above_title {
+  color: #EF723B;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+
+.page_404_btns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  gap: 12px;
+}
+
 @media screen and (min-width: 769px) {
   .events_item:hover {
     background: #fff;
@@ -2900,6 +2997,12 @@ form .btn {
   }
 }
 @media screen and (max-width: 1300px) {
+  .page_404_number_text {
+    font-size: 18vw;
+  }
+  .h1 {
+    font-size: 40px;
+  }
   .training_block h2 {
     font-size: 34px;
   }
@@ -2945,6 +3048,9 @@ form .btn {
   }
 }
 @media screen and (max-width: 1200px) {
+  .page_404_left {
+    padding-right: 30px;
+  }
   .about_page_section .arena_bottom {
     display: none;
   }
@@ -3353,6 +3459,23 @@ form .btn {
   }
 }
 @media screen and (max-width: 768px) {
+  .page_404_block {
+    flex-direction: column;
+  }
+  .page_404_left {
+    padding-right: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .page_404_right {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page_404_number_text {
+    font-size: 200px;
+  }
   .training_block .circle_block {
     width: 800px;
     padding-bottom: 800px;
@@ -3947,6 +4070,9 @@ form .btn {
     font-size: 32px;
     margin-bottom: 10px;
   }
+  .h1 {
+    font-size: 32px;
+  }
   .h1_subtitle {
     font-size: 16px;
   }
@@ -4005,7 +4131,18 @@ form .btn {
     margin-bottom: 6px;
   }
 }
+@media screen and (max-width: 500px) {
+  .page_404_number_text {
+    font-size: 40vw;
+  }
+}
 @media screen and (max-width: 440px) {
+  .page_404_btns {
+    margin-top: 30px;
+  }
+  .page_404_number_wrapper {
+    border-radius: 70px;
+  }
   .advantages_slider .swiper_settings_wrapper {
     padding-bottom: 70%;
   }
