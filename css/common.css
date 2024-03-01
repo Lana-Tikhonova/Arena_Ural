@@ -1812,6 +1812,9 @@ form .btn {
   padding-bottom: 100px;
   background: rgb(249, 250, 251);
 }
+.advantages_slider .swiper-slide.swiper-slide-active {
+  z-index: 3;
+}
 .advantages_slider .swiper-slide:nth-child(1) .slide_img_small {
   transform: rotate(37.19deg);
   top: 44px;
@@ -1964,7 +1967,7 @@ form .btn {
   left: -22px;
 }
 .about_right .circle_block {
-  top: -30%;
+  top: -16%;
 }
 .about_right .circle_wrapper {
   width: 98%;
@@ -1981,6 +1984,8 @@ form .btn {
      object-fit: contain;
   position: relative;
   z-index: 2;
+  bottom: -93px;
+  max-height: 828px;
 }
 
 .circle_block {
