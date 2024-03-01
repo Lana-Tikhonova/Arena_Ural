@@ -298,6 +298,14 @@ button {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.content .events_data {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.content .events_data_col {
+  width: 50%;
+  min-height: 220px;
+}
 
 .content_block_img {
   display: flex;
@@ -1967,6 +1975,9 @@ form .btn {
   position: relative;
   left: -22px;
 }
+.about_right .circle_block {
+  top: -30%;
+}
 
 .about_img {
   display: flex;
@@ -1980,22 +1991,22 @@ form .btn {
   z-index: 2;
 }
 
-.about_circle_block {
+.circle_block {
   width: 100%;
   position: absolute;
-  top: -30%;
+  top: 0;
   left: 0;
   height: 0;
   padding-bottom: 100%;
 }
 
-.about_circle_wrapper {
+.circle_wrapper {
   position: absolute;
   width: 98%;
   height: 98%;
 }
 
-.about_circle {
+.circle {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2005,7 +2016,7 @@ form .btn {
   align-items: center;
   justify-content: center;
 }
-.about_circle div {
+.circle div {
   border: 1px solid #fff;
   border-radius: 100%;
   display: block;
@@ -2017,29 +2028,29 @@ form .btn {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-.about_circle div span {
+.circle div span {
   background: #EF723B;
   border-radius: 100%;
   display: block;
   position: absolute;
 }
-.about_circle div:nth-child(1) {
+.circle div:nth-child(1) {
   width: 100%;
   height: 100%;
   animation-duration: 14s;
 }
-.about_circle div:nth-child(1) span {
+.circle div:nth-child(1) span {
   width: 13%;
   height: 13%;
   left: 7.5%;
   top: 8.5%;
 }
-.about_circle div:nth-child(2) {
+.circle div:nth-child(2) {
   width: 64%;
   height: 64%;
   animation-duration: 18s;
 }
-.about_circle div:nth-child(2) span {
+.circle div:nth-child(2) span {
   width: 12%;
   height: 12%;
   right: -6%;
@@ -2554,13 +2565,13 @@ form .btn {
   margin-left: -12px;
   margin-right: -12px;
   margin-bottom: 96px;
+  row-gap: 24px;
 }
 
 .events_data_col {
   padding-left: 12px;
   padding-right: 12px;
   min-height: 252px;
-  margin-bottom: 24px;
   width: 25%;
 }
 
@@ -2588,8 +2599,11 @@ form .btn {
   font-size: 20px;
   font-weight: 600;
   line-height: 150%;
-  margin-bottom: 8px;
   margin-top: 15px;
+}
+
+.events_data_text:not(:empty) {
+  margin-top: 8px;
 }
 
 .requirements_item {
@@ -2703,6 +2717,101 @@ form .btn {
   line-height: 150%;
 }
 
+.faq_item {
+  transition: all 0.2s ease;
+}
+.faq_item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.faq_item.active .faq_item_btn_text span:first-child {
+  display: none;
+}
+.faq_item.active .faq_item_btn_text span:last-child {
+  display: block;
+}
+
+.faq_item_btn {
+  cursor: pointer;
+  background: #FFF7F5;
+  padding: 24px;
+  color: #475467;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.faq_item_btn_text {
+  color: #EF723B;
+  font-size: 16px;
+  min-width: 91px;
+  text-align: right;
+}
+.faq_item_btn_text span:last-child {
+  display: none;
+}
+
+.faq_item_content {
+  display: none;
+  background: #FFF7F5;
+  padding: 0 24px 24px;
+  color: #475467;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.training_block {
+  background: #148D4E;
+  position: relative;
+  padding: 75px 0;
+  overflow: hidden;
+}
+.training_block .circle_block {
+  z-index: -1;
+  top: 43%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+.training_block .circle div:nth-child(1) {
+  width: 91%;
+  height: 91%;
+}
+.training_block .circle div:nth-child(1) span {
+  left: -3%;
+  top: 23.3%;
+}
+.training_block .circle div:nth-child(2) {
+  width: 58%;
+  height: 58%;
+}
+.training_block h2 {
+  font-size: 36px;
+  line-height: 122.222%;
+  background: #EF723B;
+  padding: 11px 34px 5px;
+  border-radius: 59px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.training_block .container {
+  position: relative;
+  z-index: 1;
+}
+.training_block form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 512px;
+}
+.training_block .checkbox_block {
+  color: #fff;
+}
+
 @media screen and (min-width: 769px) {
   .events_item:hover {
     background: #fff;
@@ -2717,6 +2826,9 @@ form .btn {
   }
 }
 @media screen and (max-width: 1300px) {
+  .training_block h2 {
+    font-size: 34px;
+  }
   .menu a {
     font-size: 18px;
   }
@@ -2759,6 +2871,9 @@ form .btn {
   }
 }
 @media screen and (max-width: 1200px) {
+  .training_block .circle_block {
+    top: 50%;
+  }
   .advantages_slider .swiper-slide:nth-child(1) .slide_img_small {
     top: 34px;
     left: -20px;
@@ -2879,6 +2994,23 @@ form .btn {
   }
 }
 @media screen and (max-width: 992px) {
+  .training_block {
+    padding: 64px 0;
+  }
+  .training_block .circle_block {
+    width: 110%;
+    padding-bottom: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .training_block h2 {
+    font-size: 31px;
+    margin-bottom: 30px;
+  }
+  .training_block .circle_wrapper {
+    width: 100%;
+    height: 100%;
+  }
   .news_list {
     margin-left: -10px;
     margin-right: -10px;
@@ -3127,6 +3259,16 @@ form .btn {
   }
 }
 @media screen and (max-width: 768px) {
+  .training_block .circle_block {
+    width: 800px;
+    padding-bottom: 800px;
+  }
+  .training_block {
+    padding: 40px 0;
+  }
+  .training_block h2 {
+    font-size: 24px;
+  }
   .news_col {
     width: 50%;
   }
@@ -3532,9 +3674,25 @@ form .btn {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .content .events_data {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .content .events_data_col {
+    width: 100%;
+    min-height: 200px;
+  }
   .quote {
     margin-bottom: 30px;
     margin-top: 30px;
+  }
+  .faq_item_btn {
+    padding: 16px;
+    font-size: 18px;
+  }
+  .faq_item_content {
+    padding: 0 16px 16px;
+    font-size: 16px;
   }
   .events_item .item_title {
     font-size: 20px;
@@ -3712,12 +3870,12 @@ form .btn {
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: 30px;
+    row-gap: 20px;
   }
   .events_data_col {
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
-    margin-bottom: 20px;
     min-height: 200px;
   }
   .requirements_item {
@@ -3760,5 +3918,18 @@ form .btn {
   }
   .tabs_link_item {
     font-size: 13px;
+  }
+  .training_block {
+    padding: 40px 0;
+  }
+  .training_block h2 {
+    font-size: 20px;
+    padding: 10px 14px 6px;
+  }
+  .faq_item_btn {
+    font-size: 15px;
+  }
+  .faq_item_btn_text {
+    font-size: 14px;
   }
 }

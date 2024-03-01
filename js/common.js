@@ -301,7 +301,8 @@ $(document).ready(function () {
     // копированиe URL в буфер обмена
     $('.copy_block').click(function () {
         var url = window.location.href;
-        var $button = $(this)
+        var $button = $(this);
+        console.log($button);
         navigator.clipboard.writeText(url).then(function () {
             $button.addClass('copied');
             setTimeout(() => {
@@ -311,4 +312,13 @@ $(document).ready(function () {
             console.error('Ошибка копирования URL в буфер обмена: ', err);
         });
     });
+
+
+    $('.faq_item').first().find('.faq_item_content').slideToggle()
+    $('.faq_item').first().addClass('active')
+
+    $(".faq_item").click(function () {
+        $('.faq_item').not(this).removeClass('active').children('.faq_item_content').slideUp("ease-out")
+        $(this).toggleClass("active").children(".faq_item_content").slideToggle("ease-out")
+    })
 });
