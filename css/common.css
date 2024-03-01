@@ -2520,8 +2520,32 @@ form .btn {
   gap: 21px;
 }
 
+.copy_block {
+  position: relative;
+  overflow: hidden;
+}
+.copy_block:hover span {
+  color: #fff;
+}
 .copy_block svg {
   stroke: #344054;
+}
+.copy_block span {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  background: #EF723B;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.copy_block.copied span {
+  display: flex;
 }
 
 .events_data {
@@ -3060,6 +3084,9 @@ form .btn {
   .head_block_right {
     width: 100%;
   }
+  .news_block {
+    padding-top: 0;
+  }
   .event_block {
     flex-direction: column;
     padding-top: 0;
@@ -3088,6 +3115,15 @@ form .btn {
     outline-width: 0;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .plyr__control--overlaid {
+    border-radius: 12px;
+    width: 78px !important;
+    height: 50px;
+  }
+  .plyr__control--overlaid svg {
+    width: 23px !important;
+    height: 21px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3484,6 +3520,10 @@ form .btn {
   .content h2,
   .content h3 {
     margin-top: 30px;
+  }
+  .content ol,
+  .content ul {
+    font-size: 16px;
   }
   .content hr {
     margin: 30px 0;

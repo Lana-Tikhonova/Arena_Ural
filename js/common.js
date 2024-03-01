@@ -108,10 +108,28 @@ $(document).ready(function () {
         },
     });
 
-    // партнеры
+    // открытие картинки во весь экран
+    if ($('[data-fancybox="gallery"]').length) {
+        $('[data-fancybox="gallery"]').fancybox({
+            idleTime: false,
+            animationEffect: "fade",
+            smallBtn: false,
+            contentClick: "close",
+            mobile: {
+                clickSlide: "close"
+            },
+        });
+    }
+
+    // видео
+    const players = Array.from(document.querySelectorAll('.player_video')).map(p => new Plyr(p, {
+        autoplay: false,
+    }));
+
+    // стр новости
     const swiperNewsPage = new Swiper(".news_page_slider", {
         slidesPerView: 1,
-        spaceBetween: 52,
+        spaceBetween: 24,
         watchSlidesProgress: true,
         mousewheelControl: true,
         watchOverflow: true,
@@ -280,27 +298,17 @@ $(document).ready(function () {
         }
     });
 
-    // открытие картинки во весь экран
-    if ($('[data-fancybox="gallery"]').length) {
-        $('[data-fancybox="gallery"]').fancybox({
-            idleTime: false,
-            animationEffect: "fade",
-            smallBtn: false,
-            contentClick: "close",
-            mobile: {
-                clickSlide: "close"
-            },
+    // копированиe URL в буфер обмена
+    $('.copy_block').click(function () {
+        var url = window.location.href;
+        var $button = $(this)
+        navigator.clipboard.writeText(url).then(function () {
+            $button.addClass('copied');
+            setTimeout(() => {
+                $button.removeClass('copied');
+            }, 3000);
+        }, function (err) {
+            console.error('Ошибка копирования URL в буфер обмена: ', err);
         });
-    }
-
-    // видео
-    const players = Array.from(document.querySelectorAll('.player_video')).map(p => new Plyr(p, {
-        autoplay: false,
-    }));
-
-    // for (let index = 0; index < players.length; index++) {
-    //     $('.btn_plyr_play').on('click', function (e) {
-    //         players[index].play();
-    //     })
-    // }
+    });
 });

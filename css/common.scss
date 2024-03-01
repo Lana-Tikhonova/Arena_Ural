@@ -2949,9 +2949,40 @@ form {
 }
 
 .copy_block {
+	position: relative;
+	overflow: hidden;
+
+	&:hover {
+		span {
+			color: #fff
+		}
+	}
+
 	svg {
 		stroke: #344054;
 	}
+
+	span {
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		display: none;
+		position: absolute;
+		background: $color_orange;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+	}
+
+	&.copied {
+		span {
+			display: flex;
+		}
+	}
+
 }
 
 .events_data {
@@ -3677,6 +3708,10 @@ form {
 		width: 100%;
 	}
 
+	.news_block {
+		padding-top: 0;
+	}
+
 	.event_block {
 		flex-direction: column;
 		padding-top: 0;
@@ -3707,6 +3742,17 @@ form {
 			border-width: 0;
 			outline-width: 0;
 			object-fit: cover;
+		}
+	}
+
+	.plyr__control--overlaid {
+		border-radius: 12px;
+		width: 78px !important;
+		height: 50px;
+
+		svg {
+			width: 23px !important;
+			height: 21px !important;
 		}
 	}
 }
@@ -4223,6 +4269,11 @@ form {
 		h2,
 		h3 {
 			margin-top: 30px;
+		}
+
+		ol,
+		ul {
+			font-size: 16px;
 		}
 
 		hr {
