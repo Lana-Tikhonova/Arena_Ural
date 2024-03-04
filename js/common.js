@@ -169,30 +169,41 @@ $(document).ready(function () {
         $('.header').toggleClass('active');
         $(this).toggleClass('active');
     })
-
-    // function scaleBlock(container, block, event) {
-    //     const block_width1 = container.offsetWidth + 1000;
-    //     const rect = container.getBoundingClientRect();
-    //     const centerX = rect.left + rect.width / 2;
-    //     const centerY = rect.top + rect.height / 2;
-    //     const deltaX = event.clientX - centerX;
-    //     const deltaY = event.clientY - centerY;
-    //     const scale = 1 + Math.abs(deltaX + deltaY) / block_width1;
-
-    //     block.style.transform = `scale(${scale})`;
-    // }
-
-
-    // const blockList = document.querySelectorAll('.scale_block');
-    // const blocksItem = document.querySelectorAll('.home_image img');
-
-
-    // blockList.forEach((item, index) => {
-    //     console.log(item, blocksItem[index]);
-    //     item.addEventListener('mousemove', (event) => {
-    //         scaleBlock(item, blocksItem[index], event);
-    //     })
-    // })
+    const containerForTwoImage = document.querySelector('.home');
+    if (containerForTwoImage) {
+        containerForTwoImage.addEventListener('mousemove', function (event) {
+            const containerWidth = containerForTwoImage.offsetWidth;
+            const containerHeight = containerForTwoImage.offsetHeight;
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+            const leftDistance = Math.abs(mouseX - containerWidth / 4);
+            const rightDistance = Math.abs(mouseX - 3 * containerWidth / 4);
+            // Уменьшаем шаг изменения масштаба путем увеличения делителя
+            let leftScale = 1 + (containerWidth / 4 - leftDistance) / 3000;
+            let rightScale = 1 + (containerWidth / 4 - rightDistance) / 3000;
+            leftScale = leftScale < 1 ? 1 : leftScale;
+            rightScale = rightScale < 1 ? 1 : rightScale;
+            console.log(rightScale);
+            gsap.to('#home_left img', {
+                duration: 0.3,
+                scale: leftScale
+            });
+            gsap.to('#home_right img', {
+                duration: 0.3,
+                scale: rightScale
+            });
+        });
+        containerForTwoImage.addEventListener('mouseleave', function (event) {
+            gsap.to('#home_left img', {
+                duration: 0.3,
+                scale: 1
+            });
+            gsap.to('#home_right img', {
+                duration: 0.3,
+                scale: 1
+            });
+        })
+    }
 
     // календарь
     const datapiskers = document.querySelectorAll('.date_input_input');
