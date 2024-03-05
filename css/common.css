@@ -2655,6 +2655,7 @@ form .btn {
   font-weight: 600;
   line-height: 136.364%;
   color: #EF723B;
+  cursor: pointer;
 }
 
 .requirements_item_content {
