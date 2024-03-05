@@ -3064,12 +3064,6 @@ form {
 
 .requirements_item {
 	background: #FFF7F5;
-	padding: 24px 24px 24px 72px;
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 136.364%;
-	color: $color_orange;
 	position: relative;
 
 	&:before {
@@ -3090,6 +3084,45 @@ form {
 
 	&:not(:last-child) {
 		margin-bottom: 24px;
+	}
+
+	&.active {
+		.requirements_item_btn_text svg {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.requirements_item_btn {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 24px 24px 24px 72px;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 136.364%;
+	color: $color_orange;
+}
+
+.requirements_item_content {
+	display: none;
+	color: #475467;
+	font-size: 18px;
+	line-height: 28px;
+	padding: 0 24px 24px;
+}
+
+.requirements_item_btn_text {
+	width: 20px;
+	height: 20px;
+	transform: rotate(-90deg);
+	flex: 0 0 auto;
+	margin-left: 20px;
+
+	svg {
+		transition: $transition;
+
 	}
 }
 
@@ -4986,9 +5019,6 @@ form {
 	}
 
 	.requirements_item {
-		font-size: 17px;
-		padding: 16px 16px 16px 54px;
-
 		&:before {
 			top: 10px;
 			left: 10px;
@@ -4999,6 +5029,16 @@ form {
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
+	}
+
+	.requirements_item_btn {
+		font-size: 17px;
+		padding: 16px 16px 16px 54px;
+	}
+
+	.requirements_item_content {
+		font-size: 16px;
+		padding: 0 16px 16px;
 	}
 
 	.text_top {

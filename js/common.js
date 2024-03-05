@@ -332,4 +332,12 @@ $(document).ready(function () {
         $('.faq_item').not(this).removeClass('active').children('.faq_item_content').slideUp("ease-out")
         $(this).toggleClass("active").children(".faq_item_content").slideToggle("ease-out")
     })
+
+    $('.requirements_item').first().find('.requirements_item_content').slideToggle()
+    $('.requirements_item').first().addClass('active')
+
+    $(".requirements_item").click(function () {
+        $('.requirements_item').not(this).removeClass('active').children('.requirements_item_content').slideUp("ease-out")
+        $(this).toggleClass("active").children(".requirements_item_content").slideToggle("ease-out")
+    })
 });
